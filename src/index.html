@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Pacifico&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  </head>
+  
+  <body>
+    <!--define box for navigation bar-->
+    <div class="box-area">
+      <header>
+        <div class="wrapper">
+          <div class="logo">
+            <img src="https://img.freepik.com/premium-vector/high-peaks-with-road-top-hiking-symbol-adventure-logo-isolated-white-background_53562-14308.jpg">
+            <a href="#">HikerWeather</a>
+  
+            <label id="date"><strong>Date :</strong></label>
+            
+            <script type="text/javascript">
+              var today = new Date();
+              var tarikh = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
+              document.getElementById("date").innerHTML += "<strong>" + tarikh + "<strong>";
+            </script>
+          </div>
+        </div>
+      </header>
+      <!--Banner-->
+      <div class="box">
+        <!--text on banner-->
+        <h2>HikerWeather</h2>
+        <h3>Weather forecasts, nowcasts and history <br> in a fast and elegant way</h3>
+      </div>
+      <!--This is content area to input anything on it below banner-->
+      <div class="content-area">
+        
+        <div class="Cart-Container">
+          <h2><span class="red"></span>Weather</h2>
+          <div class=" par"> Weather Information GOHIKE</div>			
+            
+            <p>Please enter your location you want to hike:eg(Kota Kinabalu/Penang)</p>
+            <br>
+            <input type="text", placeholder="Enter place", id="city_input">
+            <button onclick="buttonClicked()">Search</button> <a href="crud.html"><button>planner</button></a>
+            <script src="main.js"></script>
+            <br>
+            <img id="image" src="">
+        
+              <p id="display"></p>
+              <p id="display1"></p>
+              <p id="display4"></p>
+              <br><hr>
+              <img id="image1" src="">  
+              <p id="display2"></p>
+              <img id="image2" src="">  
+              <p id="display3"></p>
+              
+        
+
+        <!--This is footer function-->
+        <footer class="footer">
+            <div class="container">
+              <div class="row">
+                <!--input content on footer-->
+                <div class="footer-col">
+                  <h4>company</h4>
+                  <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>get help</h4>
+                  <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>online shop</h4>
+                  <ul>
+                    <li><a href="#">watch</a></li>
+                    <li><a href="#">bag</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">dress</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>follow us</h4>
+                  <div class="social-links">
+                    <a href="https://www.facebook.com/groups/crewhiring"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/fastfoodvid"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/fast_food_lover_2022/?hl=en"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        
+    </div>
+  
+  </body>
+ 
+</body>
+</html>
